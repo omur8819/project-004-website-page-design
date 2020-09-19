@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, .section-subscribe{
+    background-color: #35424a;
+    color: white;
+    border-bottom: 3px solid #A9508B;
+    display: flex;
+    height: 6.5rem;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.header-brand, .subscribe-newsletter{
+    margin-left: 10vw;
+}
+
+.header-navbar, .email{
+    margin-right: 10vw;
+}
+
+
+span{
+    color:#A9508B ;
+}
+
+ul li {
+    color: white;
+    display: inline;
+    list-style-type: none;
+    padding: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+   
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+#services{
+    color:#A9508B;
+    font-weight: bold;
+}
+
+#home:hover,#services:hover,#about:hover{
+    font-weight: bold;
+    cursor: pointer;
+    color: #cccccc;
+}
+
+h1, h1 span{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+}
+
+.subscribe-newsletter h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+#email__subscribe{
+    font-size:0.8rem;
+    padding: 2vh 0.5vw;
+    width: 260px;
+    height: 40px ;
+}
+
+button{
+    background-color: #A9508B;
+    color: white;
+    padding: 2vh 2vw;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 3px;
+}
+
+.main__services {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+
+.section__services {
+    margin-bottom: 2vh;
+    margin-left: 7vw;
+}
+
+.section__services--header {
+    padding: 3vh 0;
+    font-size: 1.1rem;
+}
+
+.section__services--box {
+    background-color:#E6E6E6;
+    margin-bottom: 0.8vh;
+    padding: 4vh 1vw;
+    width: 52vw;
+    border: 1px solid #ccc;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.section__services--box p {
+    font-size: 0.9rem;
+}
+
+.website {
+    padding: 2vh 0;
+}
+
+.section__quote {
+    background-color: #35424a;
+    color: white;
+    align-self: flex-start;
+    width: 323px;
+    height: auto;
+    padding: 5vh 1vw;
+    margin: 3vh 7vw 0 0;
+    border-radius: 5px;
+}
+
+.section__quote--get{
+    margin-bottom: 3vh;
+    font-weight:bold ;
+    font-size: 1.1rem;
+}
+
+#name, #email, #message{
+    width: 280px;
+    height: 30px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 0.5vh 0;
+    padding: 2vh 0.5vw;
+}
+
+#message{
+    height: 50px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid #A9508B;
+    height: 8rem ;
+    background-color: rgb(255,250,240);
+}
+
+footer p{
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width:1070px){
+    header,.section-subscribe{
+        flex-direction: column;
+        height: 6rem;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .header-brand,.subscribe-newsletter{
+        margin: 10px 0 0 0;
+    }
+        
+    .header-navbar,.email{
+        margin: 5px 0 5px 0;
+    }
+
+    .main__services {
+        /* display:flex; */
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section__services{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .section__services--box{
+        width: 323px;
+        padding: 5vh 3vw;
+        margin: 3vh 0;
+    }
+
+    .section__quote {
+        margin: 10px 0;
+        padding: 0;
+        align-self: center;
+    }
+
+    .section__quote--get{
+        margin: 3vh 3vw;
+    }
+
+    label{
+        margin-left: 3vw;
+    }
+
+    #name, #email, #message{
+        margin-left: 3vw;
+    }
+
+    #send{
+        margin: 10px 130px;
+        width: 90px;
+        height: auto;
+    }
+    
+
+}
+
+@media screen and (max-width:390px){
+    header,.section-subscribe{
+        height: auto;
+    }
+    h1, h1 span{
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 2rem;
+    }
+    .subscribe-newsletter h3{
+        font-size: 1.2rem; ;
+    }
+    #email__subscribe{
+        font-size:0.8rem;
+        padding: 2vh 0.5vw;
+        width: 200px;
+        height: 30px ;
+    }
+    #subscribe{
+        padding: 1.3vh 1vw;
+    }
+}
