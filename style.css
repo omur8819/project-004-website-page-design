@@ -59,7 +59,7 @@ h1, h1 span{
 }
 
 .main__index{
-    background-image: url(../images/showcase.jpg);
+    background-image: url(./images/showcase.jpg);
     background-repeat: no-repeat;
     height: 63vh;
     color: white;
